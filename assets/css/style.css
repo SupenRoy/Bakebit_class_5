@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com);
+*{
+    box-sizing: border-box;
+    font-family: 'montserrat',sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: royalblue;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+/**header part**/
+.header{
+    background-color: burlywood;
+    height: 77px;
+    width: 100vw;
+    padding: 10px 45px;
+    
+    
+}
+.logo img{
+    height: 20px;
+    width: 40px;
+    
+}
+.logo{
+    width: 20%;
+}
+.navbar{
+    width: 0%;
+}
+.navbar, .navbar ul{
+    text-align: right;
+    display: inline;
+}
+.logo-title span{
+    color: crimson ;
+    font-weight: bold;
+    text-align: right;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline;
+    text-align: right;
+    background-color: brown;
+}
+.navbar ul li a{
+    text-decoration: none  ;
+}
+/**header part end**/
+/* content section */
+.content{
+   min-height: 87vh;
+   width: 80%; 
+   background-color: aqua;
+   margin: 0 auto;
+   overflow: hidden; 
+}
+.box{
+    min-height: 300px;
+    max-height: 300px;
+    /* max-height:800px; */
+     max-width: 32%; 
+    /* width: 600px; */
+    background-color: rgb(186, 218, 142) ;
+    margin: 10px 0px 10px 10px;
+    float: left; 
+    overflow: hidden;
+    font-size: 20px;  
+    padding: 5px; 
+}
+.box>p{
+    /* width: 800px; */
+    text-align: justify;
+     font-size: 1.1rem; */
+}
+.box:last-child{
+    margin-right: 10px;
+}
+.content2{
+    min-height: 87vh;
+    width: 80%; 
+    background-color: rgb(146, 11, 11);
+    margin: 0 auto;
+    overflow: auto; 
+ }
+ .card{
+     position: center;
+  background-color: #00ffff;
+  width: 450px;
+  height: 300px;
+  border: 1px solid #300303;
+  perspective: 1000px; 
+ } 
+
+ .flip-box-inner{
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d ;
+    background-color: rgb(11, 104, 104);
+        
+ }
+ .card:hover .flip-box-inner{
+    transform: rotate(180deg);
+}
+ .flip-box-front, .flip-box-back{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     -webkit-backface-visibility: hidden;
+       backface-visibility: hidden;
+    }
+ .flip-box-front{
+    background-color: yellow;
+      color: rgb(54, 31, 3);
+ }
+ .flip-box-back{
+   
+    background-color: grey;
+    color: rgb(255, 0, 64);
+    transform: rotate(180deg);
+ }
+ .love{
+     animation-name: my-love;
+     animation-duration: 0.5s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+ }  
+ @keyframes my-love{
+ to{ transform: scale(1.1);}
+
+ }
